@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="UCARS 员工学习资料：复制练习模板。"><title>复制练习模板 · UCARS AI 学习资料</title><link rel="stylesheet" href="assets/site.css"></head><body>
+<header class="shell top"><a href="index.html" aria-label="返回学习首页"><img src="assets/ucars-logo-yellow.png" alt="UCARS 官方标识"></a><span>员工学习资料　｜　复制练习模板</span></header>
+<div class="shell"><nav class="site-nav" aria-label="学习资料导航"><a href="index.html">学习首页</a><a href="ai-basics.html">AI 基础</a><a href="skill-guide.html">Skill 与选题</a><a href="skill-practice.html">制作路线</a><a href="role-examples.html">岗位示例</a><a href="practice-templates.html" aria-current="page">复制模板</a><a href="personal-workspace.html">个人工作台</a><a href="skills.html">Skill 资料库</a></nav><div class="page-lead"><div class="eyebrow">员工学习资料</div><p>复制任务说明、Skill 访谈和测试模板，替换成自己的任务。实操时可以让 AI 查阅当前有权限访问的公司知识库，再结合你的真实做法给出 Skill 设计建议。</p></div><main><section class="section" id="prompt"><div class="head"><div class="kicker">复制与练习</div><h2>复制模板，开始制作</h2><p>先让 AI 查找知识库中与任务有关的制度、流程、模板或案例，再访谈你的实际做法。对照后形成建议，确认范围和规则后再生成文件。</p></div><div class="prompt"><button class="copy" type="button" data-copy="skill-template">复制模板</button><pre id="skill-template">我想把【一项具体、重复发生的工作】整理成可复用的 Skill。
+
+请先确认你是否能访问我有权限使用的公司知识库，并围绕这项工作检索相关的制度、流程、模板或已审核案例。只读取和检索，不要向知识库写入或修改内容。
+
+如果当前无法访问知识库，请直接告诉我，并请我提供有权限使用的文件、链接或内容摘录；不要假装已经查阅，也不要编造资料名称、规则或出处。
+
+检索后先简要列出你实际读到的资料名称，以及可确认的版本或更新时间（如果资料中有）。说明每份资料支持了哪些结论；没有依据的内容标为“未确认”。如果资料之间有冲突或已过期迹象，请指出来并先问我，不要自行选一条当作公司规定。
+
+接下来请当我的流程访谈助手，一次只问我一个问题，了解我的实际做法：
+- 这项工作在什么情况下开始，什么情况不适用；
+- 开始前需要哪些材料；
+- 我通常按什么顺序处理；
+- 怎样判断结果合格，常见错误是什么；
+- 哪些情况需要暂停并交给人确认；
+- 最终需要什么格式的结果。
+
+请对照知识库资料和我的回答，分别标明：
+- 知识库资料明确支持的公司要求；
+- 我确认过的实际做法；
+- 你提出的优化建议；
+- 仍缺少依据、需要我确认的事项。
+
+不要把个人经验、单个案例或你的建议写成公司制度。请说明哪些建议能让这个 Skill 更清楚、更容易执行或更容易检查，并给出理由。
+
+访谈结束后先给我一张 Skill 设计卡，包含适用范围、输入、步骤、输出、检查标准、例外处理、人工确认点和参考资料。等待我确认任务范围和规则后，再生成最简版 SKILL.md。不要增加我没要求的脚本或自动化。</pre><div class="after">只使用自己有权限访问和提供的资料；敏感信息先脱敏。知识库中的内容要核对出处与适用范围，AI 的建议只有经本人确认后才能写进 Skill。不同岗位的 AI 工具未必已连接公司知识库；无法读取时，请按模板提供经授权的资料。</div></div><div class="prompt" style="margin-top:14px"><button class="copy" type="button" data-copy="test-template">复制测试模板</button><pre id="test-template">请按我的 Skill 测试以下三个情况，并逐项说明结果：
+1. 一个属于 Skill 适用范围的正常任务；
+2. 一个看起来相似、但不属于适用范围的任务；
+3. 一个缺少关键信息或存在冲突的任务。
+
+检查 Skill 是否正确识别适用范围、按步骤处理、遵守输出要求、标出不确定信息，并在需要时暂停等待人工确认。不要只评价“好不好”，请指出具体遗漏或错误。
+
+测试材料：
+【粘贴合规、脱敏的测试材料】</pre><div class="after">保留测试案例、预期结果和修改记录。真实错误出现后再补规则，不为求完整一次写很多假设。</div></div><div class="head" style="margin-top:28px"><div class="kicker">新手从这里开始</div><h3 style="font-size:20px;margin:5px 0">零基础也能开始：让 AI 一步步带你做</h3><p>不需要先懂 Skill，也不需要提前写好流程。复制下面整段，AI 会从选任务开始带你实操。</p></div><div class="prompt"><button class="copy" type="button" data-copy="guided-template">复制新手实操模板</button><pre id="guided-template">我是 Skill 新手，不知道怎么开始。请像耐心的教练一样，带我把一项真实工作做完，再判断能不能把做法整理成可重复使用的 Skill。
+
+请遵守这些方式：
+- 用简单的话解释，不假设我懂 AI、提示词或 Skill；遇到术语先解释它是什么意思。
+- 一次只带我做一步，一次只问我一个问题。等我回答或确认后，再继续。
+- 如果我还没选好任务，先用几个日常岗位例子帮我理解，再问我最近反复做、最想省时间的一件小事。不要替我决定。
+- 不要一开始就让我填写复杂表格或写完整流程。先和我一起完成眼前这件工作。
+- 每一步告诉我现在要做什么、为什么，然后给我一个可以直接回答或检查的结果。
+
+现在开始：先问我想处理哪一项工作。如果我说不出来，请用通俗例子帮我选。
+
+选好任务后，请先确认我希望得到什么结果、手头有什么可用材料，再一步步协助我完成。你可以帮我整理、起草或检查；每次给出内容后都等我核对。我会告诉你哪里不符合实际，请把我的具体反馈落实到下一版。不要擅自把一次选择当成长期规则。
+
+如果任务需要参考公司制度、流程或模板，请先检查你是否能访问我有权限使用的公司知识库。能访问时，只读取相关内容，列出实际读到的资料名称和适用要求，不要写入或修改知识库。不能访问时要如实说明，请我提供有权限使用的文件、链接或摘录；不要假装查阅，也不要编造规定或出处。涉及资料冲突、敏感信息、客户承诺或重要业务判断时，先停下来告诉我需要确认什么。
+
+等我确认这项工作已经完成后，再带我回顾：哪些步骤是我实际采用的，哪些标准是我明确认可的，哪些只是你的建议，哪些还需要确认。然后用简单的话解释 Skill 设计卡，并帮我整理适用范围、需要的材料、操作步骤、完成标准、容易出错的地方和需要人工确认的情况。
+
+先把整理结果给我检查。不要把个人做法或 AI 建议说成公司规定。只有我确认内容后，才帮我生成一份最简单、能看懂的 Skill 文件。如果这项工作暂时不适合做成 Skill，也请说明原因，并建议我下一步怎么练习。</pre><div class="after">新手可以直接粘贴使用，不用先修改模板。请使用获准的工具和资料，并对敏感信息脱敏；AI 给出的每一步和最终 Skill 都需要本人核对。</div></div></div></section></main><footer><a href="index.html">返回学习首页</a></footer></div>
+<script>document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(document.getElementById(b.dataset.copy).innerText);b.textContent='已复制';setTimeout(()=>b.textContent='复制模板',1600)}catch{b.textContent='请手动选择复制';setTimeout(()=>b.textContent='复制模板',2200)}}));</script></body></html>
